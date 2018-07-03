@@ -1,7 +1,7 @@
 package my.day02;
 
 import java.util.Scanner;
-
+import java.util.Random;
 public class CircleArea 
 {
 	public static void main(String[] args)
@@ -77,7 +77,7 @@ public class CircleArea
 		{
 			System.out.println("영어 점수는 평균보다 작습니다.");
 		}*/
-		int total =0;//1~10합
+	/*	int total =0;//1~10합
 		int a1 = 0;//홀수
 		int a2 = 0;//짝수
 		for(int i=0;i<=10;i++)
@@ -105,6 +105,37 @@ public class CircleArea
 			System.out.println("");
 		}
 		
+		*/
+		
+		Random ran=new Random();
+		int a =ran.nextInt(10);
+		Scanner scan = new Scanner(System.in);
+	
+		
+		while(true)
+		{
+			
+			System.out.print("숫자를 입력하세요 : ");
+			int user= scan.nextInt();
+			if(a != user)
+			{
+				System.out.println("일치 하지 않습니다.");
+				if(a>user)
+				{
+					System.out.println("랜덤 값보다 작습니다.");
+				}
+				else if(a<user)
+				{
+					System.out.println("랜덤 값보다 큽니다.");
+				}
+				
+			}
+			else if(a==user)
+			{
+				System.out.println("일치 합니다.");
+				break;
+			}
+		}
 		
 	}
 }
