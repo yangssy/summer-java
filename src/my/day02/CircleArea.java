@@ -107,8 +107,8 @@ public class CircleArea
 		
 		*/
 		
-		Random ran=new Random();
-		int a =ran.nextInt(10);
+		Random ran=new Random();//랜덤 함수 생성
+		int a =ran.nextInt(10)+1;//랜덤값 int형 랜덤 값 a에 부여
 		Scanner scan = new Scanner(System.in);
 	
 		
